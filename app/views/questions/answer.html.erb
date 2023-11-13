@@ -1,0 +1,14 @@
+<div class="container mb-3">
+  <h3>Ask your coach anything</h3>
+  <h4><%= @question %></h4>
+  <h6><em>-You</em></h6>
+  <% if @question.include?("?") %>
+    <%= "Silly question, get dressed and go to work!" %>
+  <% elsif @question == "I am going to work right now!" %>
+      <%= "Great" %>
+  <% else %>
+      <%= "I don't care, get dressed and go to work!" %>
+  <% end %>
+  <h6><em>-Your coach</em></h6>
+  <%= link_to "Ask a new question", ask_path, class: 'btn btn-primary'%>
+</div>

@@ -1,0 +1,7 @@
+<div class="container mb-3">
+  <h3>Ask your coach anything</h3>
+  <form action="/answer" method="get" data-turbo="false">
+    <input type="text" name="question" value="<%= params[:question] %>" class="form-control mb-3">
+    <input type="submit" value="Ask!" class="btn btn-primary">
+  </form>
+</div>
